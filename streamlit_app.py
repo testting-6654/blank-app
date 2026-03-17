@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+audio_value = st.audio_input("Record a voice message")
+
+if audio_value:
+    st.audio(audio_value)
